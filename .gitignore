@@ -67,3 +67,7 @@ libGLESv2.dll
 OGLdpf.log
 QtQuick.2/
 src/bot_version.cpp
+bearer/
+iconengines/
+translations/
+styles/

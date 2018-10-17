@@ -115,6 +115,8 @@ Download from official site and unexpress it as ~/tools/swig
 
    the DLLs listed above might not be all necessary, refer to: http://doc.qt.io/qt-5/windows-deployment.html
 
+   use windeployqt.exe to patch DLLs
+
 7. Double-click the QSanguosha.exe and have fun!
 
 Mac OS X
