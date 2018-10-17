@@ -1,22 +1,9 @@
-Open Source Sanguosha
+Open Source Sanguosha Hegemony Edition
 ==========
-
-| Homepage:      | http://qsanguosha.org                        |
-|----------------|-----------------------------------------------|
-| API reference: | http://gaodayihao.github.com/QSanguosha/api   |
-| Documentation: | https://github.com/gaodayihao/QSanguosha/wiki (Chinese) |
-
-Third party evaluations of development process
----------
-[![Code Climate](https://codeclimate.com/github/QSanguosha-Rara/QSanguosha-For-Hegemony.png)](https://codeclimate.com/github/QSanguosha-Rara/QSanguosha-For-Hegemony) 
-
-[![Issue Stats](http://issuestats.com/github/QSanguosha/QSanguosha-For-Hegemony/badge/pr?style=flat)](http://issuestats.com/github/QSanguosha/QSanguosha-For-Hegemony)
-
-[![Issue Stats](http://issuestats.com/github/QSanguosha/QSanguosha-For-Hegemony/badge/issue?style=flat)](http://issuestats.com/github/QSanguosha/QSanguosha-For-Hegemony)
 
 Lisense
 ------------
-###Code
+### Code
 This game is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 3.0
@@ -29,7 +16,7 @@ General Public License for more details.
 
 See the LICENSE file for more details.
 
-###Material
+### Material
 Our Materials are under the terms of the Creative Commons
 Attribution-NonCommercial-NoDerivatives 4.0 International (CC
 BY-NC-ND 4.0)
@@ -272,5 +259,3 @@ Linux or MinGW(Windows)
    libgcc_s_dw2-1.dll
    libstdc++-6.dll
    libwinpthread-1.dll
-
-
