@@ -43,13 +43,13 @@ bool QSanVersionNumber::tryParse(const QString &str)
         m_minor = l[2].toInt();
         m_sub = l[3].toInt();
         if (l[4] == "alpha")
-            m_type = alpha;
+            m_type = VersionType::alpha;
         else if (l[4] == "beta")
-            m_type = beta;
+            m_type = VersionType::beta;
         else if (l[4] == "offical")
-            m_type = offical;
+            m_type = VersionType::official;
         else
-            m_type = other;
+            m_type = VersionType::other;
         if (l.length() > 5)
             m_step = l[5].toInt();
         else
@@ -66,16 +66,16 @@ QString QSanVersionNumber::toString() const
     QString str = "%1.%2.%3-%4";
     QString type_str;
     switch (m_type) {
-    case alpha:
+    case VersionType::alpha:
         type_str = "alpha";
         break;
-    case beta:
+    case VersionType::beta:
         type_str = "beta";
         break;
-    case offical:
-        type_str = "offical";
+    case VersionType::official:
+        type_str = "official";
         break;
-    case other:
+    case VersionType::other:
         type_str = "other";
         break;
     default:

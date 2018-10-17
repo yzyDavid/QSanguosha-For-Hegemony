@@ -83,6 +83,10 @@ VS2017(Windows)
 QT libraries for Windows (Visual Studio 2017, x64, 5.11.2) http://download.qt.io/official_releases/qt/5.11/5.11.2/qt-opensource-windows-x86-5.11.2.exe
 Or browse latest version of Qt for windows from: http://download.qt.io
 
+swig
+
+Download from official site and unexpress it as ~/tools/swig
+
 2. Install Qt for VS plugin and set the property Qt path.
 
 3. Open Qsanguosha.sln right under ~/builds/vs2017, change the Configuration to Release x64.
@@ -102,8 +106,14 @@ Or browse latest version of Qt for windows from: http://download.qt.io
    Qt5Widgets.dll
 
    Copy 2 files from VS redist to ~, they are listed below:
-   msvcp120.dll
-   msvcr120.dll
+   msvcp140.dll
+   vcruntime140.dll
+
+   Copy files from Qt plugins/platforms to ~ AS platforms/ directory.
+
+   Copy files libEGL.dll libEGLd.dll libGLESv2.dll libGLESv2d.dll
+
+   the DLLs listed above might not be all necessary, refer to: http://doc.qt.io/qt-5/windows-deployment.html
 
 7. Double-click the QSanguosha.exe and have fun!
 

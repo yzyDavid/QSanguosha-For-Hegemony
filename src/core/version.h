@@ -26,16 +26,16 @@
 class QSanVersionNumber
 {
 public:
-    enum VersionType
+    enum class VersionType
     {
         alpha,
         beta,
-        offical,
+        official,
         other = -1
     };
 
     explicit QSanVersionNumber(const QString &ver_str);
-    QSanVersionNumber(int major, int minor, int sub, VersionType type = offical, int step = 0);
+    QSanVersionNumber(int major, int minor, int sub, VersionType type = VersionType::official, int step = 0);
 
     // Actually only these 2 operator overloads take effect here...
     bool operator <(const QSanVersionNumber &arg2) const;

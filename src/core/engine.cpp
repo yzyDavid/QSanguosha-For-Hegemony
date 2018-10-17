@@ -660,28 +660,29 @@ SkillCard *Engine::cloneSkillCard(const QString &name) const
 #ifndef USE_BUILDBOT
 QSanVersionNumber Engine::getVersionNumber() const
 {
-    return QSanVersionNumber(2, 0, 0);
+    return QSanVersionNumber(2, 2, 0, QSanVersionNumber::VersionType::beta);
 }
 #endif
 
 QString Engine::getVersion() const
 {
-    QString version_number = getVersionNumber();
-    QString mod_name = getMODName();
-    if (mod_name == "official")
-        return version_number;
-    else
-        return QString("%1:%2").arg(version_number).arg(mod_name);
+	QString version_number = getVersionNumber();
+	QString mod_name = getMODName();
+	if (mod_name == "official") {
+		return version_number;
+	} else {
+		return QString("%1:%2").arg(version_number).arg(mod_name);
+	}
 }
 
 QString Engine::getVersionName() const
 {
-    return "Heg";
+	return "Zhenyun Yu";
 }
 
 QString Engine::getMODName() const
 {
-    return "official";
+    return "3rd-party";
 }
 
 QStringList Engine::getExtensions() const
