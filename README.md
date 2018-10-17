@@ -89,15 +89,18 @@ HOW TO BUILD
 =========
 **Tips: "~" stands for the folder where the repo is in.**
 
-VS2013(Windows)
+VS2017(Windows)
 --------
 
-1. Download the following packages:
-(1) QT libraries for Windows (Visual Studio 2013, 5.3.0) http://download.qt-project.org/official_releases/qt/5.3/5.3.0/q
+1. Download and install the following packages:
+QT libraries for Windows (Visual Studio 2017, x64, 5.11.2) http://download.qt.io/official_releases/qt/5.11/5.11.2/qt-opensource-windows-x86-5.11.2.exe
+Or browse latest version of Qt for windows from: http://download.qt.io
 
-3. Open Qsanguosha.sln right under ~/builds/vs2013, change the Configuration to Release Qt5|Win32.
+2. Install Qt for VS plugin and set the property Qt path.
 
-4. Right click project "QSanguosha" in your Solution Explorer, select "Properties", go to "Debugging" tab, set "Working Directory" to "$(ProjectDir)..\..\" (do not enter the quote marks). Then select "OK".
+3. Open Qsanguosha.sln right under ~/builds/vs2017, change the Configuration to Release x64.
+
+4. Right click project "QSanguosha" in your Solution Explorer, select "Properties", go to "Debugging" tab, set "Working Directory" to "$(ProjectDir)..\\..\\" (do not enter the quote marks). Then select "OK".
 
 4.1. [optional] Right click "sanguosha.ts" in the folder "Translaton Files" in project "QSanguosha", select "lrelease".
 
